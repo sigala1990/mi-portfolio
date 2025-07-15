@@ -1,0 +1,44 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Estilo del navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      overflow: hidden;
+      z-index: 1000;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    /* Añade espacio superior para que las secciones no queden ocultas bajo el navbar */
+    section {
+      padding: 100px 20px;
+      height: 100vh;
+    }
+
+    .fondo_azul {
+      background-color: #ecf9ff;
+    }
+
+    #aboutMe    { background-color: #ecf9ff; }
+    #proyectos  { background-color: #ecf9ff; }
+    #experiencia { background-color: #ecf9ff; }
+    #contacto  { background-color: #ecf9ff; }
