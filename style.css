@@ -1,45 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
+/* Estilo del navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  z-index: 1000;
+}
 
-    /* Estilo del navbar */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #333;
-      overflow: hidden;
-      z-index: 1000;
-    }
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
 
-    nav a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
-    
+nav a:hover {
+  background-color: #575757;
+}
 
-    nav a:hover {
-      background-color: #575757;
-    }
+/* Añade espacio superior para que las secciones no queden ocultas bajo el navbar */
+section {
+  padding: 100px 20px;
+  height: 100vh;
+}
 
-    /* Añade espacio superior para que las secciones no queden ocultas bajo el navbar */
-    section {
-      padding: 100px 20px;
-      height: 100vh;
-    }
+.fondo_azul {
+  background-color: #ecf9ff;
+}
 
-    .fondo_azul {
-      background-color: #ecf9ff;
-    }
+body.dark-mode {
+  background-color: #181818;
+  color: #f1f1f1;
+}
 
-    #aboutMe    { background-color: #ecf9ff; }
-    #proyectos  { background-color: #ecf9ff; }
-    #experiencia { background-color: #ecf9ff; }
-    #contacto  { background-color: #ecf9ff; }
+body.dark-mode nav {
+  background-color: #222;
+}
+
+body.dark-mode section,
+body.dark-mode .fondo_azul,
+body.dark-mode #aboutMe,
+body.dark-mode #proyectos,
+body.dark-mode #experiencia,
+body.dark-mode #contacto {
+  background-color: #23272f;
+  color: #f1f1f1;
+}
+
+.navbar-custom {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+}
+
+#toggleTheme {
+  margin-left: auto;
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 8px;
+  cursor: pointer;
+}
+#aboutMe {
+  background-color: #ecf9ff;
+}
+#proyectos {
+  background-color: #ecf9ff;
+}
+#experiencia {
+  background-color: #ecf9ff;
+}
+#contacto {
+  background-color: #ecf9ff;
+}
