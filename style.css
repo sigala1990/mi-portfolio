@@ -80,11 +80,46 @@ body.dark-mode #contacto {
   background-color: #ecf9ff;
 }
 #proyectos {
-  background-color: #ecf9ff;
+  background-color: #12db9e;
+  margin-bottom: 80px;
+  
 }
 #experiencia {
   background-color: #ecf9ff;
+  margin-top: 80px;
+  
 }
 #contacto {
   background-color: #ecf9ff;
 }
+
+#toast {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  font-size: 1rem;
+}
+
+.card_project{
+  margin:0.5rem;
+  width: 24rem;
+  
+}
+
+.card-body {
+  padding: 0.05rem; /* menos espacio interno */
+  font-size: 0.85rem; /* opcional: texto más compacto */
+}
+
+.img-thumbnail {
+  border: none !important;
+}
+
