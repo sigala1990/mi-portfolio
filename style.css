@@ -1,125 +1,36 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
+body, html {
+  color: white !important;
+    overflow-x: hidden;
+/* background-color: rgb(14, 19, 32)!important; */
 }
 
-/* Estilo del navbar */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #333;
-  overflow: hidden;
-  z-index: 1000;
+#experiencia_data1 {
+border: 3px solid rgb(14, 19, 32) !important;
+border-radius: 15px !important ;
+background-color: rgb(29, 37, 50);
 }
 
-nav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+
+#experiencia_data2 {
+padding: 10px !important;
+border: 1px solid #ffffff !important;
+border-radius: 15px !important ;
+background-color: rgb(14, 19, 32)!important;
+color: white !important;
 }
 
-nav a:hover {
-  background-color: #575757;
+#sobre-mi{
+  background-color:rgb(50, 66, 105)!important
 }
 
-/* Añade espacio superior para que las secciones no queden ocultas bajo el navbar */
-section {
-  padding: 100px 20px;
-  height: 100vh;
+#proyectos{
+  background-color:rgb(14, 19, 32)!important
 }
 
-.fondo_azul {
-  background-color: #ecf9ff;
+#experiencia{
+    background-color:rgb(50, 66, 105)!important
+  /* background-color:rgb(14, 19, 32)!important
+   */
 }
 
-body.dark-mode {
-  background-color: #181818;
-  color: #f1f1f1;
-}
-
-body.dark-mode nav {
-  background-color: #222;
-}
-
-body.dark-mode section,
-body.dark-mode .fondo_azul,
-body.dark-mode #aboutMe,
-body.dark-mode #proyectos,
-body.dark-mode #experiencia,
-body.dark-mode #contacto {
-  background-color: #23272f;
-  color: #f1f1f1;
-}
-
-.navbar-custom {
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.nav-links a {
-  margin: 0 10px;
-}
-
-#toggleTheme {
-  margin-left: auto;
-  background: none;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  padding: 8px;
-  cursor: pointer;
-}
-#aboutMe {
-  background-color: #ecf9ff;
-}
-#proyectos {
-  background-color: #12db9e;
-  margin-bottom: 80px;
-  
-}
-#experiencia {
-  background-color: #ecf9ff;
-  margin-top: 80px;
-  
-}
-#contacto {
-  background-color: #ecf9ff;
-}
-
-#toast {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #222;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-  font-size: 1rem;
-}
-
-.card_project{
-  margin:0.5rem;
-  width: 24rem;
-  
-}
-
-.card-body {
-  padding: 0.05rem; /* menos espacio interno */
-  font-size: 0.85rem; /* opcional: texto más compacto */
-}
-
-.img-thumbnail {
-  border: none !important;
-}
 
