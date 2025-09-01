@@ -1,36 +1,36 @@
-body, html {
+body,
+html {
+    font-family: 'Merriweather', serif;
   color: white !important;
-    overflow-x: hidden;
-/* background-color: rgb(14, 19, 32)!important; */
+  overflow-x: hidden;
+
+  /* background-color: rgb(14, 19, 32)!important; */
 }
 
 #experiencia_data1 {
-border: 3px solid rgb(14, 19, 32) !important;
-border-radius: 15px !important ;
-background-color: rgb(29, 37, 50);
+  border: 3px solid rgb(14, 19, 32) !important;
+  border-radius: 15px !important ;
+  background-color: rgb(29, 37, 50);
 }
-
 
 #experiencia_data2 {
-padding: 10px !important;
-border: 1px solid #ffffff !important;
-border-radius: 15px !important ;
-background-color: rgb(14, 19, 32)!important;
-color: white !important;
+  padding: 10px !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 15px !important ;
+  background-color: rgb(14, 19, 32) !important;
+  color: white !important;
 }
 
-#sobre-mi{
-  background-color:rgb(50, 66, 105)!important
+#sobre-mi {
+  background-color: rgb(50, 66, 105) !important;
 }
 
-#proyectos{
-  background-color:rgb(14, 19, 32)!important
+#proyectos {
+  background-color: rgb(14, 19, 32) !important;
 }
 
-#experiencia{
-    background-color:rgb(50, 66, 105)!important
+#experiencia {
+  background-color: rgb(50, 66, 105) !important;
   /* background-color:rgb(14, 19, 32)!important
    */
 }
-
-
