@@ -1,10 +1,25 @@
 body,
 html {
-    font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   color: white !important;
   overflow-x: hidden;
 
   /* background-color: rgb(14, 19, 32)!important; */
+}
+
+.card-perfil {
+  background-color: rgb(50, 66, 105) !important;
+}
+
+#perfil_bg {
+  background-color: rgb(27, 35, 56) !important;
+}
+
+img.perfil-redondo {
+  border-radius: 50%;
+  border: 3px solid #fff; /* opcional: color y grosor del marco */
+  background-color: antiquewhite;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 1);
 }
 
 #experiencia_data1 {
@@ -17,12 +32,12 @@ html {
   padding: 10px !important;
   border: 1px solid #ffffff !important;
   border-radius: 15px !important ;
-  background-color: rgb(14, 19, 32) !important;
+  background-color: rgb(27, 35, 56) !important;
   color: white !important;
 }
 
 #sobre-mi {
-  background-color: rgb(50, 66, 105) !important;
+  background-color: rgb(27, 35, 56) !important;
 }
 
 #proyectos {
@@ -30,7 +45,16 @@ html {
 }
 
 #experiencia {
-  background-color: rgb(50, 66, 105) !important;
-  /* background-color:rgb(14, 19, 32)!important
-   */
+  background-color: rgb(27, 35, 56) !important;
+}
+
+#stars-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent !important;
 }
