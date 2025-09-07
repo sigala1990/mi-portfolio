@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Sección Principal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #0f172a 0%, #071023 100%);
+      color: #e6eef8;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 50rem;
+      font-weight: 600;
+      color: #7c3aed;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg,#fff 0%, #ffd700 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .card-custom {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(6px);
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      padding: 2rem;
+    }
+    .snippet {
+      margin-top: 1.5rem;
+      background: rgba(255,255,255,0.06);
+      padding: 1rem;
+      border-radius: 0.75rem;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #cfe7ff;
+    }
+    .mockup .device {
+      background: rgba(255,255,255,0.03);
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .mockup .preview {
+      height: 250px;
+      border-radius: 0.5rem;
+      background: linear-gradient(135deg, rgba(124,58,237,0.16), rgba(79,70,229,0.12));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      <!-- Texto principal -->
+      <div class="col-lg-7">
+        <div class="card-custom">
+          <span class="eyebrow">Desarrollador Front-end</span>
+          <h1 class="mb-3">
+            Hola — soy <span class="gradient-text">Tu Nombre</span><br>
+            Construyo interfaces limpias y rápidas.
+          </h1>
+          <p class="lead mb-4">
+            Me especializo en crear experiencias web accesibles y con buen rendimiento. 
+            Aquí verás algunos proyectos destacados, código abierto y diseños interactivos.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="cv.pdf" class="btn btn-outline-light">Descargar CV</a>
+          </div>
+          <div class="snippet mt-4">
+            <code>
+              &lt;section class="hero"&gt;<br>
+              &nbsp;&nbsp;&lt;h1&gt;Hola — soy Tu Nombre&lt;/h1&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;Interfaz, rendimiento y accesibilidad.&lt;/p&gt;<br>
+              &lt;/section&gt;
+            </code>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockups -->
+      <div class="col-lg-5">
+        <div class="mockup">
+          <div class="device">
+            <div class="preview">Proyecto destacado — Dashboard</div>
+          </div>
+          <div class="device d-flex gap-3">
+            <div class="flex-fill bg-dark rounded p-3">
+              <div class="fw-bold">Último proyecto</div>
+              <div class="small opacity-75">React • Tailwind • Vite</div>
+            </div>
+            <div class="bg-gradient rounded d-flex align-items-center justify-content-center fw-bold text-white px-3" style="background: linear-gradient(90deg,#7c3aed,#4f46e5); min-width:90px;">
+              Live
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

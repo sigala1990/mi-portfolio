@@ -1,14 +1,14 @@
-const canvas = document.getElementById('stars-bg');
-const ctx = canvas.getContext('2d');
+const canvas = document.getElementById("stars-bg");
+const ctx = canvas.getContext("2d");
 let width = window.innerWidth;
 let height = window.innerHeight;
 canvas.width = width;
 canvas.height = height;
-canvas.style.position = 'fixed';
+canvas.style.position = "fixed";
 canvas.style.top = 0;
 canvas.style.left = 0;
-canvas.style.zIndex = '+1';
-canvas.style.pointerEvents = 'none';
+canvas.style.zIndex = "+1";
+canvas.style.pointerEvents = "none";
 
 const STAR_COUNT = 80;
 const stars = [];
@@ -20,7 +20,7 @@ for (let i = 0; i < STAR_COUNT; i++) {
     r: Math.random() * 2 + 1,
     dx: (Math.random() - 0.5) * 0.5,
     dy: (Math.random() - 0.5) * 0.5,
-    color: 'rgba(189, 197, 33, 0.8)' // amarillo dorado
+    color: "rgba(189, 197, 33, 0.8)", // amarillo dorado
   });
 }
 
@@ -44,9 +44,19 @@ function animate() {
 
 animate();
 
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
   width = window.innerWidth;
   height = window.innerHeight;
   canvas.width = width;
   canvas.height = height;
+});
+
+document.getElementById("copyEmail").addEventListener("click", function (e) {
+  e.preventDefault();
+  navigator.clipboard.writeText("adriaqf@gmail.com");
+  var toast = document.getElementById("toast");
+  toast.style.display = "block";
+  setTimeout(function () {
+    toast.style.display = "none";
+  }, 2000);
 });
