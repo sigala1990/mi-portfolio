@@ -7,7 +7,7 @@ canvas.height = height;
 canvas.style.position = "fixed";
 canvas.style.top = 0;
 canvas.style.left = 0;
-canvas.style.zIndex = "+1";
+canvas.style.zIndex = "-111";
 canvas.style.pointerEvents = "none";
 
 const STAR_COUNT = 80;
@@ -60,3 +60,10 @@ document.getElementById("copyEmail").addEventListener("click", function (e) {
     toast.style.display = "none";
   }, 2000);
 });
+
+const btn = document.getElementById("toggleMode");
+const btnIcon = document.getElementById("toggleIcon");
+btn.onclick = function () {
+  document.body.classList.toggle("light-mode");
+  btnIcon.src = document.body.classList.contains("light-mode") ? "src/moon.png" : "src/sun.png";
+};

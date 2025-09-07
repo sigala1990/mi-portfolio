@@ -1,54 +1,66 @@
-body,
-html {
-  /* font-family: "Merriweather", serif; */
-  color: white !important;
-  overflow-x: hidden;
-
-  /* background-color: rgb(14, 19, 32)!important; */
+:root {
+  --bg1: #0f172a; /* azul oscuro */
+  --bg2: rgb(27, 35, 56);
+  --border_ext: rgba(255, 255, 255, 0.02);
+  --border_int: rgba(255, 255, 255, 0.01);
+  --border: rgba(255, 0, 0, 0.03);
+  --accent: #7c3aed; /* morado */
+  --text: #ffffff;
+  --glass: rgba(255, 255, 255, 0.06);
+  --card: rgba(255, 255, 255, 0.03);
+  --radius: 14px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-.card-perfil {
-  background-color: rgb(50, 66, 105) !important;
+body {
+  /* z-index: -2; */
+  background-color: var(--bg1);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
 }
 
-#perfil_bg {
-  background-color: rgb(27, 35, 56) !important;
+body.light-mode {
+  --bg1: #ffffff; /* gris claro */
+  --bg2: #ffffff; /* blanco */
+  --border_ext: rgba(33, 32, 32, 0.03);
+  --border_int: rgba(63, 63, 63, 0.045);
+  --border: rgba(0, 0, 0, 0.118);
+  --accent: #ffffff; /* morado */
+  --text: #1a1a1a;
+  --glass: rgba(29, 20, 20, 0.697);
+  --card: rgba(43, 43, 43, 0.038);
 }
 
-img.perfil-redondo {
-  border-radius: 50%;
-  border: 3px solid #fff; /* opcional: color y grosor del marco */
-  background-color: antiquewhite;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 1);
+#caja_exterior {
+  border-radius: 18px !important ;
+  background-color: var(--bg2);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
 }
 
-#experiencia_data1 {
-  border: 3px solid rgb(14, 19, 32) !important;
-  border-radius: 15px !important ;
-  background-color: rgb(29, 37, 50);
-}
-
-#experiencia_data2 {
+#caja_interior {
   padding: 10px !important;
-  border: 1px solid #ffffff !important;
+  border: 1px solid var(--text) !important;
   border-radius: 15px !important ;
-  background-color: rgb(27, 35, 56) !important;
-  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  background-color: var(--bg1) !important;
+  color: var(--text);
 }
 
 #sobre-mi {
   /* background-color: rgb(27, 35, 56) !important; */
-  background-color: #0f172a !important;
+  /* background-color: #0f172a !important; */
 }
 
 #proyectos {
   /* background-color: rgb(14, 19, 32) !important; */
-    background-color: #0f172a !important;
+  /* background-color: #0f172a !important; */
 }
 
 #experiencia {
   /* background-color: rgb(27, 35, 56) !important; */
-    background-color: #0f172a !important;
+  /* background-color: #0f172a !important; */
 }
 
 #stars-bg {
@@ -57,41 +69,22 @@ img.perfil-redondo {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  z-index: -10;
   pointer-events: none;
   background: transparent !important;
 }
 
 /*****************************/
 
-:root {
-  --bg1: #0f172a; /* azul oscuro */
-  --accent: #7c3aed; /* morado */
-  --glass: rgba(255, 255, 255, 0.06);
-  --card: rgba(255, 255, 255, 0.03);
-  --radius: 14px;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  background: linear-gradient(180deg, var(--bg1) 0%, #0f172a 100%);
-  color: #e6eef8;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 48px;
-}
 
 .gradient-text {
-  background: linear-gradient(90deg, #fff 0%, #ffd700 100%);
+  background: linear-gradient(90deg, var(--text) 0%, #ffd700 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
   font-weight: bold;
 }
 
@@ -104,14 +97,14 @@ body {
   align-items: center;
 }
 .card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  /* background: linear-gradient(180deg, rgba(255, 0, 0, 0.02), rgba(255, 0, 0, 0.01)); */
   border-radius: var(--radius);
   padding: 36px;
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px); */
   box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
 }
-.card-custom{
-    font-family: "Inter", system-ui, sans-serif;
+.card-custom {
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .eyebrow {
@@ -131,7 +124,7 @@ h1 {
 }
 p.lead {
   margin: 0 0 22px;
-  color: rgba(230, 238, 248, 0.85);
+  color: var(--text);
   max-width: 62ch;
 }
 .actions {
@@ -147,13 +140,13 @@ p.lead {
   cursor: pointer;
 }
 .btn-primary {
-  background: linear-gradient(90deg, var(--accent), #4f46e5);
+  background: linear-gradient(90deg, #7c3aed, #4f46e5);
   color: white;
 }
 .btn-ghost {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  color: #cfe7ff;
+  border: 1px solid var(--text);
+  color: var(--text);
 }
 
 /* snippet preview */
@@ -182,8 +175,8 @@ p.lead {
 .device {
   border-radius: 18px;
   padding: 18px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  border: 1px solid rgba(255, 255, 255, 0.03);
+  background: linear-gradient(180deg, var(--border_ext), var(--border_int));
+  border: 1px solid var(--border);
 }
 .preview {
   height: 300px;
